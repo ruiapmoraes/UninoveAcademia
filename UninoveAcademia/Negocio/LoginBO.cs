@@ -16,6 +16,7 @@ namespace UninoveAcademia.Negocio
         /// <param name="pass">Senha</param>
         /// <returns>Returna se o usuário exista</returns>
         public bool VerificaLogin(string user, string pass) {
+            bool resultado = false;
             return true;
         }
     }

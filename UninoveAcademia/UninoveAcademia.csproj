@@ -78,12 +78,8 @@
     <Compile Include="Negocio\LoginBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueriesSistema.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QueriesSistema.resx</DependentUpon>
-    </Compile>
     <Compile Include="Util\Conexao.cs" />
+    <Compile Include="Util\Util.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,10 +92,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QueriesSistema.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>QueriesSistema.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <None Include="AcademiaUninoveDataSet.xsc">
       <DependentUpon>AcademiaUninoveDataSet.xsd</DependentUpon>
     </None>
