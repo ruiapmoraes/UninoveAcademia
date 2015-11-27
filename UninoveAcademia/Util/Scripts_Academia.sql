@@ -14,3 +14,7 @@ INSERT INTO Login (Codigo, Usuario, Senha, Tipo_Usuario, Data_Criacao)
 	ALTER TABLE Login add Data_Criacao DateTime
 
 	delete from Login
+
+	select usuario, senha from Login Where usuario = 'ruimora' and senha = '123456'
+
+	select usuario, senha from Login

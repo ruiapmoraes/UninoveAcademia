@@ -16,8 +16,13 @@ namespace UninoveAcademia.Negocio
         /// <param name="pass">Senha</param>
         /// <returns>Returna se o usuário exista</returns>
         public bool VerificaLogin(string user, string pass) {
+            LoginADO objLoginADO = new LoginADO();
+
             bool resultado = false;
-            return true;
+
+            resultado = objLoginADO.VerificaLoginADO(user, pass);
+
+            return resultado;
         }
     }
 }

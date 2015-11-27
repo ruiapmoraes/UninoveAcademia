@@ -47,6 +47,8 @@ namespace UninoveAcademia
 
                 bool resultado = objLoginBO.VerificaLogin(objLoginDTO.Usuario, objLoginDTO.Senha);
 
+                if (resultado)
+                    MessageBox.Show("Usuário " + objLoginDTO.Usuario + " logado com sucesso. ", "Academia Univnove");
             }
         }
 
