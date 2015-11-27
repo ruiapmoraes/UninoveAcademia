@@ -58,6 +58,11 @@
     <Compile Include="Negocio\LoginBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueriesSistema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QueriesSistema.resx</DependentUpon>
+    </Compile>
     <Compile Include="Util\Conexao.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -71,6 +76,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QueriesSistema.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QueriesSistema.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,6 +97,7 @@
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Queries\Login.sql" />
     <Content Include="Util\Scripts_Academia.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -35,7 +36,9 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.errorList = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorList)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -105,6 +108,10 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Senha";
             // 
+            // errorList
+            // 
+            this.errorList.ContainerControl = this;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +123,7 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -129,6 +137,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.ErrorProvider errorList;
     }
 }
 
