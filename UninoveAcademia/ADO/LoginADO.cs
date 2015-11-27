@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using UninoveAcademia.Queries;
+using UninoveAcademia.Util;
 
 namespace UninoveAcademia.ADO
 {
@@ -13,17 +15,22 @@ namespace UninoveAcademia.ADO
         public bool VerificaLoginADO(string usuario, string senha)
         {
             bool resultado = false;
-            string conexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GitHubUninove\2SEM_2015\UninoveAcademia\UninoveAcademia\AcademiaUninove.mdf;Integrated Security=True;Connect Timeout=30";
+            string stringConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GitHubUninove\2SEM_2015\UninoveAcademia\UninoveAcademia\AcademiaUninove.mdf;Integrated Security=True;Connect Timeout=30";
+            //string stringConn = Conexao.ObterConexao();
             SqlConnection conn = new SqlConnection();
             SqlDataAdapter da = null;
+            string query = string.Format(Queries.SistemaQueries.qLogin, usuario, senha);
 
-            conn.ConnectionString = conexao;
+
+            conn.ConnectionString = stringConn;
                 
 
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("select usuario, senha from Login Where usuario = '" + usuario +
-                        "' and senha = '" + senha + "'", conn);
+                //SqlCommand cmd = new SqlCommand("select usuario, senha from Login Where usuario = '" + usuario +
+                //    "' and senha = '" + senha + "'", conn);
+                SqlCommand cmd = new SqlCommand(query, conn);
+
                     conn.Open();
                 da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();

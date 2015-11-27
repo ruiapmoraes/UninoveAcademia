@@ -78,6 +78,11 @@
     <Compile Include="Negocio\LoginBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\SistemaQueries.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaQueries.resx</DependentUpon>
+    </Compile>
     <Compile Include="Util\Conexao.cs" />
     <Compile Include="Util\Util.cs" />
     <EmbeddedResource Include="frmLogin.resx">
@@ -92,6 +97,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Queries\SistemaQueries.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SistemaQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="AcademiaUninoveDataSet.xsc">
       <DependentUpon>AcademiaUninoveDataSet.xsd</DependentUpon>
     </None>
@@ -127,7 +136,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>AcademiaUninove.mdf</DependentUpon>
     </Content>
-    <Content Include="Queries\Login.sql" />
+    <Content Include="Queries\qLogin.sql" />
     <Content Include="Util\Scripts_Academia.sql" />
   </ItemGroup>
   <ItemGroup>
