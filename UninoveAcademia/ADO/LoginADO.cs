@@ -12,6 +12,12 @@ namespace UninoveAcademia.ADO
 {
     public class LoginADO
     {
+        /// <summary>
+        /// Verifica o Login no banco de dados.
+        /// </summary>
+        /// <param name="usuario">Usuário</param>
+        /// <param name="senha">Senha</param>
+        /// <returns>Devolver o resultado da consulta do usuário no banco de dados</returns>
         public bool VerificaLoginADO(string usuario, string senha)
         {
             bool resultado = false;
