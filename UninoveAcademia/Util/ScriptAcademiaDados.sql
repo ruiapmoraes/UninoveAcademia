@@ -9,3 +9,5 @@ INSERT INTO Login (Codigo, Usuario, Senha, Tipo_Usuario, Data_Criacao)
 	select usuario, senha from Login Where usuario = 'ruimora' and senha = '123456'
 
 	select usuario, senha from Login
+
+	Select * from LOGIN
