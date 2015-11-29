@@ -24,11 +24,12 @@ namespace UninoveAcademia.View
 
         private void CarregaSplash() {
             //TODO: Chamar tela de Inicio do Sistema
+            frmSplash telaSplash = new frmSplash();
+            telaSplash.ShowDialog();
         }
 
         private void CarregaTelaLogin()
-        {
-            //TODO: CHamar tela de Login
+        {            
             frmLogin telaLogin = new frmLogin();
             telaLogin.ShowDialog();
         }
