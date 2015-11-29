@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -85,7 +85,17 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\AlunoBO.cs" />
+    <Compile Include="Negocio\AulaBO.cs" />
+    <Compile Include="Negocio\CargoBO.cs" />
+    <Compile Include="Negocio\FichaExerciciosBO.cs" />
+    <Compile Include="Negocio\FrequenciaBO.cs" />
+    <Compile Include="Negocio\FuncAulaBO.cs" />
+    <Compile Include="Negocio\FuncionarioBO.cs" />
+    <Compile Include="Negocio\HoraAulaBO.cs" />
+    <Compile Include="Negocio\HorarioBO.cs" />
     <Compile Include="Negocio\LoginBO.cs" />
+    <Compile Include="Negocio\MedidasBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\SistemaQueries.Designer.cs">
@@ -95,6 +105,18 @@
     </Compile>
     <Compile Include="Util\Conexao.cs" />
     <Compile Include="Util\Util.cs" />
+    <Compile Include="View\frmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCargo.Designer.cs">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +138,12 @@
     <EmbeddedResource Include="Queries\SistemaQueries.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SistemaQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmCargo.resx">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="AcademiaUninoveDataSet.xsc">
       <DependentUpon>AcademiaUninoveDataSet.xsd</DependentUpon>
