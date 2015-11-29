@@ -1,12 +1,18 @@
-﻿---- Criando tabela de Login
---Create Table Login (
---	Codigo int Primary Key,
---	Usuario Varchar(8) Not Null,
---	Senha Varchar(8) Not Null,
---	Tipo_Usuario Varchar Not Null,
---	Data_Criacao DateTime Not Null
---)
+﻿--Para criar o banco de dados
+USE master
+GO
 
+-- Drop the database if it already exists
+IF  EXISTS (
+	SELECT name 
+		FROM sys.databases 
+		WHERE name = 'AcademiaUninove'
+)
+DROP DATABASE AcademiaUninove
+GO
+
+CREATE DATABASE AcademiaUninove
+GO
 
 
 CREATE TABLE LOGIN (
