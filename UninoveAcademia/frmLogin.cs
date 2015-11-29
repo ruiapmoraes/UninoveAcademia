@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using UninoveAcademia.Negocio;
 using UninoveAcademia.Classes;
+using UninoveAcademia.View;
 
 namespace UninoveAcademia
 {
@@ -34,6 +35,11 @@ namespace UninoveAcademia
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            VerificaLogin();
+        }
+
+        private void VerificaLogin()
+        {
             if (CamposPreechidos(txtUsuario.Text) && CamposPreechidos(txtSenha.Text))
             {
                 //Verificar usuario no banco
@@ -48,7 +54,12 @@ namespace UninoveAcademia
                 bool resultado = objLoginBO.VerificaLogin(objLoginDTO.Usuario, objLoginDTO.Senha);
 
                 if (resultado)
+                {
                     MessageBox.Show("Usuário " + objLoginDTO.Usuario + " logado com sucesso. ", "Academia Univnove");
+                    //TODO: Em caso de sucesso, redirecionar para o formulário principal
+                    this.Close();
+
+                }
             }
         }
 
@@ -67,5 +78,27 @@ namespace UninoveAcademia
                 return true;
         }
 
+        private void txtSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                VerificaLogin();
+            }
+        }
     }
 }
