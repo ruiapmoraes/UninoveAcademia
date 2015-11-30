@@ -108,6 +108,11 @@
     <Compile Include="Negocio\MedidasBO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\Create\SistemaQueriesInsert.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaQueriesInsert.resx</DependentUpon>
+    </Compile>
     <Compile Include="Queries\SistemaQueries.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,6 +127,18 @@
     </Compile>
     <Compile Include="View\frmCargo.Designer.cs">
       <DependentUpon>frmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmCargoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCargoCadastro.Designer.cs">
+      <DependentUpon>frmCargoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmCargoTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCargoTeste.Designer.cs">
+      <DependentUpon>frmCargoTeste.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -147,12 +164,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Queries\Create\SistemaQueriesInsert.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SistemaQueriesInsert.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Queries\SistemaQueries.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SistemaQueries.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCargo.resx">
       <DependentUpon>frmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmCargoCadastro.resx">
+      <DependentUpon>frmCargoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmCargoTeste.resx">
+      <DependentUpon>frmCargoTeste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -186,7 +213,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Queries\Delete\" />
+    <Folder Include="Queries\Read\" />
     <Folder Include="Queries\Relatorio\" />
+    <Folder Include="Queries\Update\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AcademiaUninove.mdf">
@@ -196,6 +226,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>AcademiaUninove.mdf</DependentUpon>
     </Content>
+    <Content Include="Queries\Create\qInsertCargo.sql" />
     <Content Include="Queries\qLogin.sql" />
     <Content Include="Util\ScriptAcademiaDados.sql" />
     <Content Include="Util\Scripts_Academia.sql" />

@@ -38,7 +38,7 @@ namespace UninoveAcademia.View
 
         private void cargoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCargo telaCargo = new frmCargo();
+            frmCargoTeste telaCargo = new frmCargoTeste();
             telaCargo.ShowDialog();
         }
     }

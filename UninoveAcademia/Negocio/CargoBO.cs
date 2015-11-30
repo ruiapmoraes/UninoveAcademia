@@ -8,6 +8,11 @@ namespace UninoveAcademia.Negocio
 {
     public class CargoBO
     {
+        public bool InserirCargo()
+        {
+            bool bRet = false;
 
+            return bRet;
+        }
     }
 }

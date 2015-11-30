@@ -11,7 +11,7 @@ namespace UninoveAcademia.Util
 {
     public class ADOBase
     {
-        private static DataTable RealizaPesquisaSQL(string strQuery, string strStringConexao) {
+        public static DataTable RealizaPesquisaSQL(string strQuery, string strStringConexao) {
             DataTable objTabela = null;
 
             try
@@ -37,7 +37,7 @@ namespace UninoveAcademia.Util
             return objTabela;
         }
 
-        private static bool RealizaComandoSQL(string strComandoSQL, string strStringConexao)
+        public static bool RealizaComandoSQL(string strComandoSQL, string strStringConexao)
         {
             SqlConnection objConexao = null;
             SqlCommand objComando = null;
