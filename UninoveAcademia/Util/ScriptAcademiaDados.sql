@@ -11,3 +11,5 @@ INSERT INTO Login (Codigo, Usuario, Senha, Tipo_Usuario, Data_Criacao)
 	select usuario, senha from Login
 
 	Select * from LOGIN
+
+	Select * from Cargo

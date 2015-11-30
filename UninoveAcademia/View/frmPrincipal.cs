@@ -19,19 +19,27 @@ namespace UninoveAcademia.View
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            //TODO
+            //CarregaSplash();
             CarregaTelaLogin();
         }
 
         private void CarregaSplash() {
             //TODO: Chamar tela de Inicio do Sistema
             frmSplash telaSplash = new frmSplash();
-            telaSplash.ShowDialog();
+            telaSplash.Show();
         }
 
         private void CarregaTelaLogin()
         {            
             frmLogin telaLogin = new frmLogin();
             telaLogin.ShowDialog();
+        }
+
+        private void cargoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargo telaCargo = new frmCargo();
+            telaCargo.ShowDialog();
         }
     }
 }

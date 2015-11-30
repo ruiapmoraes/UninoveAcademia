@@ -35,6 +35,10 @@ namespace UninoveAcademia
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+#if DEBUG
+            txtUsuario.Text = "Admin";
+            txtSenha.Text = "Admin";
+#endif
             VerificaLogin();
         }
 
@@ -48,8 +52,12 @@ namespace UninoveAcademia
             }
             else
             {
+
                 objLoginDTO.Usuario = txtUsuario.Text.Trim();
                 objLoginDTO.Senha = txtSenha.Text.Trim();
+
+
+
 
                 bool resultado = objLoginBO.VerificaLogin(objLoginDTO.Usuario, objLoginDTO.Senha);
 

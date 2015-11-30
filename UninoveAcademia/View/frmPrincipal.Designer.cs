@@ -35,6 +35,7 @@
             this.atividadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripUninove.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,8 @@
             // 
             // cadastroToolStripMenuItem
             // 
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -89,6 +92,13 @@
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
+            // cargoToolStripMenuItem
+            // 
+            this.cargoToolStripMenuItem.Name = "cargoToolStripMenuItem";
+            this.cargoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cargoToolStripMenuItem.Text = "Cargo";
+            this.cargoToolStripMenuItem.Click += new System.EventHandler(this.cargoToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,5 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem atividadeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargoToolStripMenuItem;
     }
 }

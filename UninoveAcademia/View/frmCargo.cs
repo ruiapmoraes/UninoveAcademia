@@ -31,5 +31,10 @@ namespace UninoveAcademia.View
             this.cARGOTableAdapter.Fill(this.academiaUninoveDataSet.CARGO);
 
         }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

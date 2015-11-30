@@ -21,8 +21,8 @@ namespace UninoveAcademia.ADO
         public bool VerificaLoginADO(string usuario, string senha)
         {
             bool resultado = false;
-            string stringConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GitHubUninove\2SEM_2015\UninoveAcademia\UninoveAcademia\AcademiaUninove.mdf;Integrated Security=True;Connect Timeout=30";
-            //string stringConn = Conexao.ObterConexao();
+            //string stringConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GitHubUninove\2SEM_2015\UninoveAcademia\UninoveAcademia\AcademiaUninove.mdf;Integrated Security=True;Connect Timeout=30";
+            string stringConn = Conexao.ObterConexao();
             SqlConnection conn = new SqlConnection();
             SqlDataAdapter da = null;
             string query = string.Format(Queries.SistemaQueries.qLogin, usuario, senha);

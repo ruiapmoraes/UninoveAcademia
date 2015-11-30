@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UninoveAcademia.Negocio
+namespace UninoveAcademia.Util
 {
-    public class CargoBO
+    class Validacao
     {
-
     }
 }

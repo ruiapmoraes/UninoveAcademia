@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UninoveAcademia.Negocio
+namespace UninoveAcademia.ADO
 {
-    public class CargoBO
+    public class CargoADO
     {
 
     }
